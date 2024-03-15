@@ -10,7 +10,9 @@ serverSocket.listen(1)
 while True:
     #Establish the connection
     print('Ready to serve...')
-    connectionSocket, addr = serverSocket.accept()#Fill in start #Fill in end
+    #Fill in start
+    connectionSocket, addr = serverSocket.accept() 
+    #Fill in end
     print('This part works')
     connectionSocket.close()
 try:

@@ -17,7 +17,7 @@ while True:
     connectionSocket.close()
 try:
     #Fill in start 
-    message = simpleWeb.html
+    message = 
     #Fill in end
     filename = message.split()[1]
     f = open(filename[1:])

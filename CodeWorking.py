@@ -3,8 +3,8 @@ serverSocket = socket(AF_INET, SOCK_STREAM) #Initialises a socket object
 serverPort = 12005 #Denote the chosen port number
 serverSocket.bind(('', serverPort)) #Binds the serverSocket object to the specified port on the line above
 serverSocket.listen(1) #Tells the Program to keep the connection by denoting "1"
+print("The server is running")
 while True:
-    print("The server is running")
     print('Ready to serve...')
     connectionSocket, addr = serverSocket.accept() 
     try:

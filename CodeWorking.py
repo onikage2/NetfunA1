@@ -29,5 +29,5 @@ while True:
         print(header)
         connectionSocket.send(header.encode())
         connectionSocket.close()
-    serverSocket.close()
-    exit() #Terminates the program
+serverSocket.close()
+exit() #Terminates the program (However will not occur as program runs forever)

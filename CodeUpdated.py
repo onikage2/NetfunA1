@@ -40,7 +40,7 @@ while True:
         #Send response message for file not found (This Should be a 404 File Not Found Page?)
         #Fill in start
         header = 'HTTP/1.1 404 Not Found\n\n'
-        response = '<html><body><center><h3>Error 404: File not found</h3><p>Netfun Webserver</p></center></body></html>'
+        response = '<html><meta charset="UTF-8"><body><center><h1>Error 404: File not found</h1><p>Netfun Webserver</p><p><div style="font-size:5rem;width:100%;text-align:center;">&#x1F928;</div></p></center></body></html>'
         header += response
         connectionSocket.send(header.encode())
         #Fill in end

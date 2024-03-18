@@ -11,7 +11,7 @@ while True:
         message = connectionSocket.recv(1024).decode() #Recieves and decodes a message from the connection socket
         filename = message.split()[1] #Splits the message to get just the file path
         print("Opening: " + filename[1:])
-        f = open(filename[1:]) #Denotes f as the open file ignoring the initial /
+        f = open(filename[1:], errors="ignore") #Denotes f as the open file ignoring the initial /
         outputdata = f.read() #Reads the data in the file and places into outputdata
         header = 'HTTP/1.1 200 OK\n\n'
         print("Sending Data: " + header + outputdata)
